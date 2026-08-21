@@ -1,2 +1,2 @@
-const SUPABASE_URL = 'https://uguiykiqlhltswzgqwxd.supabase.co';
-const SUPABASE_ANON_KEY = 'sb_publishable_Avf4hCfffk_fT2VkOn-Itw_CCsZHzbM';
+NEXT_PUBLIC_SUPABASE_URL=https://uguiykiqlhltswzgqwxd.supabase.co
+NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=sb_publishable_Avf4hCfffk_fT2VkOn-Itw_CCsZHzbM;
