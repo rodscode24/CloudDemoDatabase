@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tasks — Supabase CRUD</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="top-bar">
+    <h1>Tasks</h1>
+    <button id="newTaskBtn">+ New Task</button>
+  </div>
+
+  <div id="flash" class="flash"></div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Status</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="taskList">
+      <tr><td colspan="4">Loading...</td></tr>
+    </tbody>
+  </table>
+
+  <dialog id="taskDialog">
+    <form id="taskForm">
+      <h2 id="dialogTitle">New Task</h2>
+      <input type="hidden" id="taskId">
+      <label>Title
+        <input type="text" id="titleInput" required>
+      </label>
+      <label>Description
+        <textarea id="descriptionInput" rows="4"></textarea>
+      </label>
+      <label>
+        <input type="checkbox" id="doneInput">
+        Done
+      </label>
+      <div class="form-actions">
+        <button type="button" class="secondary" id="cancelBtn">Cancel</button>
+        <button type="submit">Save</button>
+      </div>
+    </form>
+  </dialog>
+
+  <!-- Supabase JS client via CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
